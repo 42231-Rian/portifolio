@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIAN ENTERTAINMENT — Portfólio</title>
+  <meta name="description" content="Portfólio de Rian Ferreira de Lima — RIAN ENTERTAINMENT">
+
+  <!-- Fontes do Google: Orbitron (Títulos geométricos) e Inter (Textos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Botão de acessibilidade para pular para o conteúdo principal -->
+  <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+  <!-- TELA DE ABERTURA CINEMATOGRÁFICA 3D — ESTILO PS2 WORLD -->
+  <div id="intro-screen" class="intro-overlay" role="region" aria-label="Abertura cinematográfica do site">
+    <!-- Canvas de poeira cósmica e partículas 3D em tempo real -->
+    <canvas id="intro-particles-canvas" class="intro-canvas" aria-hidden="true"></canvas>
+
+    <!-- Universo 3D com câmera e monólitos/torres volumétricas -->
+    <div class="ps2-viewport" aria-hidden="true">
+      <div class="ps2-world" id="ps2-world">
+        <!-- Luz ambiente central e névoa difusa -->
+        <div class="ps2-abyss-glow"></div>
+
+        <!-- Conjunto de torres e pilares 3D espalhados pelo espaço -->
+        <div class="ps2-tower tower-1"><div class="tower-face face-front"></div><div class="tower-face face-back"></div><div class="tower-face face-left"></div><div class="tower-face face-right"></div><div class="tower-face face-top"></div></div>
+        <div class="ps2-tower tower-2"><div class="tower-face face-front"></div><div class="tower-face face-back"></div><div class="tower-face face-left"></div><div class="tower-face face-right"></div><div class="tower-face face-top"></div></div>
+        <div class="ps2-tower tower-3"><div class="tower-face face-front"></div><div class="tower-face face-back"></div><div class="tower-face face-left"></div><div class="tower-face face-right"></div><div class="tower-face face-top"></div></div>
+        <div class="ps2-tower tower-4"><div class="tower-face face-front"></div><div class="tower-face face-back"></div><div class="tower-face face-left"></div><div class="tower-face face-right"></div><div class="tower-face face-top"></div></div>
+        <div class="ps2-tower tower-5"><div class="tower-face face-front"></div><div class="tower-face face-back"></div><div class="tower-face face-left"></div><div class="tower-face face-right"></div><div class="tower-face face-top"></div></div>
+        <div class="ps2-tower tower-6"><div class="tower-face face-front"></div><div class="tower-face face-back"></div><div class="tower-face face-left"></div><div class="tower-face face-right"></div><div class="tower-face face-top"></div></div>
+        <div class="ps2-tower tower-7"><div class="tower-face face-front"></div><div class="tower-face face-back"></div><div class="tower-face face-left"></div><div class="tower-face face-right"></div><div class="tower-face face-top"></div></div>
+        <div class="ps2-tower tower-8"><div class="tower-face face-front"></div><div class="tower-face face-back"></div><div class="tower-face face-left"></div><div class="tower-face face-right"></div><div class="tower-face face-top"></div></div>
+      </div>
+    </div>
+
+    <!-- Logotipo e Identidade (Fase 4: 8-11s) -->
+    <div class="intro-content">
+      <div class="intro-brand" id="intro-brand">
+        <h1 class="intro-title">RIAN</h1>
+        <h2 class="intro-subtitle">ENTERTAINMENT</h2>
+      </div>
+
+      <button id="btn-skip-intro" class="btn-skip" type="button" aria-label="Pular animação de abertura">
+        PULAR INTRO <span aria-hidden="true">➔</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- CABEÇALHO E MENU TEMÁTICO DE NAVEGAÇÃO -->
+  <header class="main-header" id="main-header">
+    <div class="header-container">
+      <a href="#inicio" class="logo-link" aria-label="Rian Entertainment Início">
+        <span class="logo-accent">RIAN</span>
+        <span class="logo-sub">ENTERTAINMENT</span>
+      </a>
+
+      <nav class="system-nav" aria-label="Navegação Principal">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#inicio" class="nav-link active" data-nav="inicio">
+              <span class="nav-index">01</span>
+              <span class="nav-label">Início</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobre" class="nav-link" data-nav="sobre">
+              <span class="nav-index">02</span>
+              <span class="nav-label">Sobre mim</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projetos" class="nav-link" data-nav="projetos">
+              <span class="nav-index">03</span>
+              <span class="nav-label">Projetos</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link" data-nav="contato">
+              <span class="nav-index">04</span>
+              <span class="nav-label">Contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL (SEÇÕES PREPARADAS PARA AS PRÓXIMAS ETAPAS) -->
+  <main id="conteudo-principal">
+    <!-- Seção Início / Hero -->
+    <section id="inicio" class="section section-hero reveal-on-scroll">
+      <div class="container hero-container">
+        <div class="hero-badge">SISTEMA INICIALIZADO • V1.0</div>
+        <h2 class="hero-title">BEM-VINDO AO <br><span class="text-glow">RIAN ENTERTAINMENT</span></h2>
+        <p class="hero-description">
+          Uma experiência interativa com estética tecnológica inspirada no clássico dos consoles. Explore minha trajetória, projetos em desenvolvimento e formas de contato.
+        </p>
+        <div class="hero-actions">
+          <a href="#sobre" class="btn btn-primary">Conhecer Sobre mim</a>
+          <a href="#projetos" class="btn btn-secondary">Ver Projetos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre mim (Etapa 2 — Dados reais) -->
+    <section id="sobre" class="section section-sobre reveal-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02 // ARQUIVO PESSOAL</span>
+          <h2 class="section-title">Sobre mim</h2>
+        </div>
+        
+        <div class="sobre-layout">
+          <div class="sobre-profile-card">
+            <div class="profile-header">
+              <div class="profile-avatar-placeholder" aria-label="Espaço reservado para foto de perfil">
+                <span class="avatar-initials">RF</span>
+                <span class="avatar-status-badge" title="Disponível para novos projetos"></span>
+              </div>
+              <div class="profile-info">
+                <h3 class="profile-name">Rian Ferreira de Lima</h3>
+                <p class="profile-role">Desenvolvedor em Formação • 16 anos</p>
+              </div>
+            </div>
+
+            <div class="profile-body">
+              <blockquote class="profile-quote">
+                “Sou Rian Ferreira de Lima, estudante de Técnico em TI e desenvolvedor em formação. Gosto de tecnologia e de criar projetos digitais, unindo aprendizado, criatividade e programação.”
+              </blockquote>
+            </div>
+
+            <div class="profile-details-grid">
+              <div class="detail-item">
+                <span class="detail-label">FORMAÇÃO TÉCNICA</span>
+                <span class="detail-value">Escola Raphael Di Santo — Ensino Médio com Técnico em TI</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">ATUAÇÃO PROFISSIONAL</span>
+                <span class="detail-value">TWO (Setor de Construção)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Projetos (Etapa 3 — Galeria e Card do LEFT 4 MIAMI 2) -->
+    <section id="projetos" class="section section-projetos reveal-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03 // GALERIA DE SISTEMAS</span>
+          <h2 class="section-title">Projetos</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Card do Projeto: LEFT 4 MIAMI 2 -->
+          <article class="project-card">
+            <div class="project-media-container">
+              <!-- Visual com tema retrô arcade / console para o jogo 2D -->
+              <div class="project-media-fallback" aria-hidden="true">
+                <div class="game-radar-scan"></div>
+                <span class="game-media-tag">RETRO 2D ARCADE</span>
+                <span class="game-media-title">LEFT 4 MIAMI 2</span>
+              </div>
+              <span class="project-badge">JOGO DE NAVEGADOR</span>
+            </div>
+
+            <div class="project-info">
+              <div class="project-meta">
+                <span class="project-category">Desenvolvimento Web / Jogos 2D</span>
+                <span class="project-status">Disponível Online</span>
+              </div>
+
+              <h3 class="project-title">LEFT 4 MIAMI 2</h3>
+              <p class="project-description">
+                Jogo 2D de navegador desenvolvido com foco em ação, mecânicas ágeis e jogabilidade retrô em tempo real. Criado para execução direta no navegador via GitHub Pages.
+              </p>
+
+              <div class="project-actions">
+                <a href="https://42231-rian.github.io/Gugu-jogo/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-game">
+                  <span>Jogar agora</span>
+                  <span aria-hidden="true" class="btn-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Contato (Etapa 4 — Informações reais e validação) -->
+    <section id="contato" class="section section-contato reveal-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04 // TRANSMISSÃO DIRETA</span>
+          <h2 class="section-title">Contato</h2>
+        </div>
+
+        <div class="contato-grid">
+          <!-- Coluna 1: Links diretos de contato -->
+          <div class="contato-channels">
+            <h3 class="channels-title">CANAIS OFICIAIS</h3>
+            <p class="channels-desc">Entre em contato direto comigo por e-mail, telefone ou redes sociais:</p>
+
+            <ul class="channels-list">
+              <li class="channel-card">
+                <div class="channel-icon" aria-hidden="true">
+                  <img src="assets/email-icon.png" alt="" class="channel-icon-img">
+                </div>
+                <div class="channel-content">
+                  <span class="channel-name">E-mail</span>
+                  <a href="mailto:rianferreiradelim@gmail.com" class="channel-link">rianferreiradelim@gmail.com</a>
+                </div>
+              </li>
+
+              <li class="channel-card">
+                <div class="channel-icon" aria-hidden="true">
+                  <img src="assets/whatsapp-icon.png" alt="" class="channel-icon-img">
+                </div>
+                <div class="channel-content">
+                  <span class="channel-name">Telefone / WhatsApp</span>
+                  <a href="https://wa.me/5519983888369" target="_blank" rel="noopener noreferrer" class="channel-link">+55 (19) 98388-8369</a>
+                </div>
+              </li>
+
+              <li class="channel-card">
+                <div class="channel-icon" aria-hidden="true">
+                  <img src="assets/instagram-icon.png" alt="" class="channel-icon-img">
+                </div>
+                <div class="channel-content">
+                  <span class="channel-name">Instagram</span>
+                  <a href="https://www.instagram.com/rian_ferr/" target="_blank" rel="noopener noreferrer" class="channel-link">@rian_ferr</a>
+                </div>
+              </li>
+
+              <li class="channel-card">
+                <div class="channel-icon" aria-hidden="true">
+                  <img src="assets/github-icon.png" alt="" class="channel-icon-img">
+                </div>
+                <div class="channel-content">
+                  <span class="channel-name">GitHub</span>
+                  <a href="https://github.com/42231-Rian" target="_blank" rel="noopener noreferrer" class="channel-link">github.com/42231-Rian</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Coluna 2: Formulário com validação local e feedback honesto -->
+          <div class="contato-form-wrapper">
+            <h3 class="channels-title">ENVIAR MENSAGEM</h3>
+            <p class="form-disclaimer">
+              * Validação em tempo real no navegador. Como este portfólio não possui servidor backend para envio direto, utilize os canais acima ou gere sua mensagem pré-formatada.
+            </p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Seu Nome</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Digite seu nome completo" required>
+                <span class="form-error" id="error-name" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Seu E-mail</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="exemplo@email.com" required>
+                <span class="form-error" id="error-email" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Mensagem</label>
+                <textarea id="contact-message" name="message" rows="4" class="form-input form-textarea" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                <span class="form-error" id="error-message" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Validar e Preparar Envio</span>
+              </button>
+
+              <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <p class="footer-copy">© 2026 Rian Ferreira de Lima — RIAN ENTERTAINMENT. Todos os direitos reservados.</p>
+      <p class="footer-note">Homenagem autoral com design independente.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
